@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0d111d;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container .technologies {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  background: #005272;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .technologies .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--i);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.container .technologies:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .technologies .icon ion-icon {
+  font-size: 5em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container .technologies:hover .icon ion-icon {
+  font-size: 2em;
+}
+
+.container .technologies .content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 90px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.container .technologies:hover .content {
+  transform: scale(1);
+}
+
+.container .technologies .content h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.container .technologies .content p {
+  font-weight: 300;
+  line-height: 1.5em;
+  color: rgb(228, 228, 228);
+}
+
+.container .technologies .content a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #005272;
+}
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.637);
+  padding: 6px 4px;
+}
+
+.link:hover {
+  background: #fff;
+}
